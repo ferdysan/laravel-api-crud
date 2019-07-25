@@ -15,7 +15,8 @@ class MoviesImport implements ToModel
     public function model(array $row)
     {
         return new Movie([
-            //
+            'title'=>$row[0];
+            'director'=>$row[1];
         ]);
     }
 }
